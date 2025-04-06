@@ -16,7 +16,7 @@ if st.button("Get Recommendations"):
         st.warning("Please enter a query first.")
     else:
         try:
-            res = requests.get(BACKEND_URL, params={"query": query})
+            res = requests.get("https://shl-rag-assessment.onrender.com/recommend", params={"query": query})
             results = res.json()["results"]
             if results:
                 for i, r in enumerate(results, 1):
