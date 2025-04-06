@@ -6,11 +6,16 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], allow_credentials=True,
-    allow_methods=["*"], allow_headers=["*"]
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get("/recommend")
 def recommend(query: str):
-    results = retrieve(query)
-    return {"results": results}
+    try:
+        results = retrieve(query)
+        return {"results": results}
+    except Exception as e:
+        return {"error": str(e)}
