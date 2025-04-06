@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Account Manager Solution",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "49 minutes",
+    "type": "Client Relationship / Management"
+  },
+  {
+    "name": "Agency Manager Solution",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "51 minutes",
+    "type": "Sales / Management"
+  },
+  {
+    "name": "Apprentice + 8.0 Job Focused Assessment",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "30 minutes",
+    "type": "Cognitive / Entry-Level"
+  },
+  {
+    "name": "Apprentice 8.0 Job Focused Assessment",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "20 minutes",
+    "type": "Cognitive / Entry-Level"
+  },
+  {
+    "name": "Bank Collections Agent - Short Form",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "45 minutes",
+    "type": "Finance / Collections"
+  },
+  {
+    "name": "Bank Operations Supervisor - Short Form",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "45 minutes",
+    "type": "Finance / Supervisor"
+  },
+  {
+    "name": "Contact Center Sales & Service 8.0",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "31 minutes",
+    "type": "Sales / Customer Support"
+  },
+  {
+    "name": "Customer Service with Sales - Short Form",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "44 minutes",
+    "type": "Sales / Customer Service"
+  },
+  {
+    "name": "Claims/Operations Supervisor Solution",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "48 minutes",
+    "type": "Operations / Supervisor"
+  },
+  {
+    "name": "Front Desk Associate Solution",
+    "url": "https://www.shl.com/solutions/products/product-catalog/",
+    "remote": "Yes",
+    "adaptive": "No",
+    "duration": "50 minutes",
+    "type": "Hospitality / Customer Service"
+  }
+]
