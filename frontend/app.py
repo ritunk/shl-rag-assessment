@@ -8,12 +8,15 @@ st.markdown("Enter a job description or query below to get recommended SHL asses
 
 query = st.text_area("🔍 Enter Job Description or Query:")
 
+# 🔁 Replace with your actual Render backend URL
+BACKEND_URL = "https://shl-rag-assessment.onrender.com"
+
 if st.button("Get Recommendations"):
     if not query.strip():
         st.warning("Please enter a query first.")
     else:
         try:
-            res = requests.get("http://127.0.0.1:8000/recommend", params={"query": query})
+            res = requests.get(BACKEND_URL, params={"query": query})
             results = res.json()["results"]
             if results:
                 for i, r in enumerate(results, 1):
