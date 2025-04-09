@@ -1,82 +1,82 @@
 [
   {
     "name": "Account Manager Solution",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "49 minutes",
-    "type": "Client Relationship / Management"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/account-manager-solution/",
+    "adaptive_support": "No",
+    "duration": 49,
+    "remote_support": "Yes",
+    "test_type": ["Client Relationship", "Management"]
   },
   {
     "name": "Agency Manager Solution",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "51 minutes",
-    "type": "Sales / Management"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/agency-manager-solution/",
+    "adaptive_support": "No",
+    "duration": 51,
+    "remote_support": "Yes",
+    "test_type": ["Sales", "Management"]
   },
   {
     "name": "Apprentice + 8.0 Job Focused Assessment",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "30 minutes",
-    "type": "Cognitive / Entry-Level"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/apprentice-8-0-job-focused-assessment-4261/",
+    "adaptive_support": "No",
+    "duration": 30,
+    "remote_support": "Yes",
+    "test_type": ["Cognitive", "Entry-Level"]
   },
   {
     "name": "Apprentice 8.0 Job Focused Assessment",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "20 minutes",
-    "type": "Cognitive / Entry-Level"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/apprentice-8-0-job-focused-assessment/",
+    "adaptive_support": "No",
+    "duration": 20,
+    "remote_support": "Yes",
+    "test_type": ["Cognitive", "Entry-Level"]
   },
   {
     "name": "Bank Collections Agent - Short Form",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "45 minutes",
-    "type": "Finance / Collections"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/bank-collections-agent-short-form/",
+    "adaptive_support": "No",
+    "duration": 45,
+    "remote_support": "Yes",
+    "test_type": ["Finance", "Collections"]
   },
   {
     "name": "Bank Operations Supervisor - Short Form",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "45 minutes",
-    "type": "Finance / Supervisor"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/bank-collections-agent-short-form/",
+    "adaptive_support": "No",
+    "duration": 45,
+    "remote_support": "Yes",
+    "test_type": ["Finance", "Supervisor"]
   },
   {
     "name": "Contact Center Sales & Service 8.0",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "31 minutes",
-    "type": "Sales / Customer Support"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/contact-center-sales-and-service-8-0-4268/",
+    "adaptive_support": "No",
+    "duration": 31,
+    "remote_support": "Yes",
+    "test_type": ["Sales", "Customer Support"]
   },
   {
     "name": "Customer Service with Sales - Short Form",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "44 minutes",
-    "type": "Sales / Customer Service"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/customer-service-with-sales-short-form/",
+    "adaptive_support": "No",
+    "duration": 44,
+    "remote_support": "Yes",
+    "test_type": ["Sales", "Customer Service"]
   },
   {
     "name": "Claims/Operations Supervisor Solution",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "48 minutes",
-    "type": "Operations / Supervisor"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/claimsoperations-supervisor-solution/",
+    "adaptive_support": "No",
+    "duration": 48,
+    "remote_support": "Yes",
+    "test_type": ["Operations", "Supervisor"]
   },
   {
     "name": "Front Desk Associate Solution",
-    "url": "https://www.shl.com/solutions/products/product-catalog/",
-    "remote": "Yes",
-    "adaptive": "No",
-    "duration": "50 minutes",
-    "type": "Hospitality / Customer Service"
+    "url": "https://www.shl.com/solutions/products/product-catalog/view/front-desk-associate-solution/",
+    "adaptive_support": "No",
+    "duration": 50,
+    "remote_support": "Yes",
+    "test_type": ["Hospitality", "Customer Service"]
   }
 ]
