@@ -20,8 +20,7 @@ def load_index():
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
    
-    # json_path = os.path.join(os.path.dirname(__file__), "data/shl_catalog.json")
-    json_path = os.path.join(os.path.dirname(__file__), "backend/data/shl_catalog.json")
+    json_path = os.path.join(os.path.dirname(__file__), "data/shl_catalog.json")
     with open(json_path, "r") as f:
         catalog = json.load(f)
 
