@@ -27,8 +27,8 @@ async def health_check():
 @app.post("/recommend")
 async def recommend(request: RecommendationRequest):
     try:
-        print(" /recommend called")
-        print(" Query received:", request.query)
+        print("/recommend called")
+        print("Query received:", request.query)
         query = request.query
         if not query:
             raise HTTPException(status_code=400, detail="Query cannot be empty")
@@ -37,7 +37,7 @@ async def recommend(request: RecommendationRequest):
         print(" Retrieved results:", results)
         return {"recommended_assessments": results}
     except Exception as e:
-        print(" ERROR in /recommend:", str(e))
+        print("ERROR in /recommend:", str(e))
         raise HTTPException(status_code=500, detail=str(e))
     
 
