@@ -71,7 +71,7 @@ def load_index():
 
     try:
         print(" Loading SentenceTransformer model...")
-        model = SentenceTransformer('all-MiniLM-L6-v2')
+        model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
         print(" Model loaded")
 
         json_path = os.path.join(os.path.dirname(__file__), "data/shl_catalog.json")
