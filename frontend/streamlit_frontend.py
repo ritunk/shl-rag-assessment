@@ -11,8 +11,8 @@ st.markdown("Enter a job description or query below to get recommended SHL asses
 query = st.text_area("Enter Job Description or Query:", height=150)
 
 # Configuration for backend API
-BACKEND_URL = "http://localhost:8001"  # Update this to your deployed URL when ready
-# BACKEND_URL = "https://your-render-url.onrender.com"  
+BACKEND_URL = "https://shl-rag-assessment.onrender.com"  
+  
 
 # Example queries
 st.sidebar.header("Example Queries")
