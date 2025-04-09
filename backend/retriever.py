@@ -70,36 +70,36 @@ def load_index():
         return
 
     try:
-        print("📦 Loading SentenceTransformer model...")
+        print(" Loading SentenceTransformer model...")
         model = SentenceTransformer('all-MiniLM-L6-v2')
-        print("✅ Model loaded")
+        print(" Model loaded")
 
         json_path = os.path.join(os.path.dirname(__file__), "data/shl_catalog.json")
-        print(f"📂 Loading catalog from: {json_path}")
+        print(f" Loading catalog from: {json_path}")
 
         if not os.path.exists(json_path):
-            raise FileNotFoundError(f"❌ File not found: {json_path}")
+            raise FileNotFoundError(f" File not found: {json_path}")
 
         with open(json_path, "r") as f:
             catalog = json.load(f)
-        print(f"✅ Loaded {len(catalog)} assessments from catalog")
+        print(f" Loaded {len(catalog)} assessments from catalog")
 
         corpus = [build_search_text(item) for item in catalog]
-        print("🧠 Creating embeddings for catalog")
-        corpus_embeddings = model.encode(corpus, show_progress_bar=True)
+        print(" Creating embeddings for catalog")
+        corpus_embeddings = model.encode(corpus, show_progress_bar=True, batch_size=2, normalize_embeddings=True)
 
         dimension = corpus_embeddings[0].shape[0]
         index = faiss.IndexFlatL2(dimension)
         index.add(np.array(corpus_embeddings))
-        print("✅ FAISS index built successfully")
+        print(" FAISS index built successfully")
 
     except Exception as e:
-        print("❌ ERROR in load_index:", str(e))
+        print(" ERROR in load_index:", str(e))
         raise
 
 def retrieve(query, top_k=10):
     """Retrieve top k assessments based on query similarity"""
-    print("🔎 retrieve() called with query:", query)
+    print(" retrieve() called with query:", query)
 
     try:
         load_index()
@@ -108,9 +108,9 @@ def retrieve(query, top_k=10):
         D, I = index.search(np.array(query_embedding), min(top_k, len(catalog)))
 
         results = [format_response(catalog[i]) for i in I[0]]
-        print(f"✅ Retrieved {len(results)} results")
+        print(f" Retrieved {len(results)} results")
         return results[:max(1, min(10, len(results)))]
 
     except Exception as e:
-        print("❌ ERROR in retrieve:", str(e))
+        print(" ERROR in retrieve:", str(e))
         return []
