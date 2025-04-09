@@ -35,4 +35,15 @@ async def recommend(request: RecommendationRequest):
         return {"recommended_assessments": results}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+@app.get("/test-file")
+async def test_file():
+    import os
+    json_path = os.path.join(os.path.dirname(__file__), "data/shl_catalog.json")
+    return {
+        "path_checked": json_path,
+        "file_exists": os.path.exists(json_path)
+    }
+
 
