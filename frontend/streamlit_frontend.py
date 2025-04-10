@@ -51,21 +51,23 @@ if st.button("Get Recommendations"):
                                 
                                 with col1:
                                     st.markdown(f"### {i}.")
-                                    st.markdown(f"**Duration:** {r['duration']} min")
+                                    st.markdown(f"**Duration:** {r.get('duration', 'N/A')} min")
                                 
                                 with col2:
-                                    st.markdown(f"### [{r.get('name', 'Assessment')}]({r['url']})")
-                                    st.markdown(f"{r['description']}")
+                                    st.markdown(f"### [{r.get('name', r.get('title', 'Assessment'))}]({r.get('url', '#')})")
+                                    st.markdown(f"{r.get('description', 'No description available.')}")
                                     
                                    
                                     meta1, meta2 = st.columns(2)
                                     with meta1:
-                                        st.markdown(f"**Remote:** {r['remote_support']}")
+                                        st.markdown(f"**Remote Support:** {r.get('remote_support', 'N/A')}")
+                                        st.markdown(f"**Level:** {r.get('level', 'N/A')}")
                                     with meta2:
-                                        st.markdown(f"**Adaptive:** {r['adaptive_support']}")
+                                        st.markdown(f"**Adaptive Support:** {r.get('adaptive_support', 'N/A')}")
+                                        st.markdown(f"**ID:** {r.get('id', 'N/A')}")
                                     
                                     
-                                    st.markdown(f"**Types:** {', '.join(r['test_type'])}")
+                                    st.markdown(f"**Types/Competencies:** {', '.join(r.get('test_type') or r.get('competencies', ['N/A']))}")
                                 
                                 st.markdown("---")
                     else:
